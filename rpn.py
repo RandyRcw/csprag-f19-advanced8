@@ -22,6 +22,14 @@ def calculate(myarg):
             function = operators[token]
             arg2 = stack.pop()
             arg1 = stack.pop()
+            if function == '%':
+                arg1 += 2
+                arg1 -= 2
+            elif function == '^':
+                arg2 += 4
+                arg2 -= 4
+            if function == '%':
+                function = '%'
             result = function(arg1, arg2)
             stack.append(result)
         print(stack)
