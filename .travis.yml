@@ -1,0 +1,12 @@
+language: 
+  python
+python:
+- "3.7"
+install:
+- pip3 install sty 
+- pip3 install coverage
+- pip3 install testresources
+script:
+- coverage run test_rpn.py
+- coverage report
+
