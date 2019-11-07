@@ -7,6 +7,6 @@ install:
 - pip3 install coverage
 - pip3 install testresources
 script:
-- coverage run test_rpn.py
+- coverage python3 -m unittest
 - coverage report
 
