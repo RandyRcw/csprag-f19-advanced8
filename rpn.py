@@ -8,7 +8,7 @@ operators = {
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-    '%': operator.mod,
+    # '%': operator.mod,
 }
 
 def calculate(myarg):
