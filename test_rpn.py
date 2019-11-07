@@ -15,6 +15,6 @@ class TestBasics(unittest.TestCase):
     def test_divide(self):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
-    def test_modulus(self):
-        result = rpn.calculate("87 18 %")
-        self.assertEqual(15, result)
+    # def test_modulus(self):
+    #     result = rpn.calculate("87 18 %")
+    #     self.assertEqual(15, result)
